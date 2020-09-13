@@ -1,13 +1,13 @@
 //
-//  ViewController.m
+//  LoginViewController.h
 //  OTP Starter
 //
 //  Created by James Gibbons on 13/09/2020.
 //  Copyright © 2020 James Gibbons. All rights reserved.
 //
 
-#import "ViewController.h"
+#import <UIKit/UIKit.h>
 
-@implementation ViewController
+@interface LoginViewController : UIViewController
 
 @end

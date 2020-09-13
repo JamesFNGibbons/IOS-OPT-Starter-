@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		B6E6D7B8250EB1EC00031832 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D7B7250EB1EC00031832 /* AppDelegate.m */; };
 		B6E6D7BB250EB1EC00031832 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D7BA250EB1EC00031832 /* SceneDelegate.m */; };
-		B6E6D7BE250EB1EC00031832 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D7BD250EB1EC00031832 /* ViewController.m */; };
 		B6E6D7C1250EB1EC00031832 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6E6D7BF250EB1EC00031832 /* Main.storyboard */; };
 		B6E6D7C3250EB1ED00031832 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E6D7C2250EB1ED00031832 /* Assets.xcassets */; };
 		B6E6D7C6250EB1ED00031832 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6E6D7C4250EB1ED00031832 /* LaunchScreen.storyboard */; };
 		B6E6D7C9250EB1ED00031832 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D7C8250EB1ED00031832 /* main.m */; };
 		B6E6D7D3250EB1ED00031832 /* OTP_StarterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D7D2250EB1ED00031832 /* OTP_StarterTests.m */; };
 		B6E6D7DE250EB1ED00031832 /* OTP_StarterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D7DD250EB1ED00031832 /* OTP_StarterUITests.m */; };
+		B6E6D7F2250EBB0100031832 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D7F1250EBB0100031832 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +41,6 @@
 		B6E6D7B7250EB1EC00031832 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B6E6D7B9250EB1EC00031832 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		B6E6D7BA250EB1EC00031832 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		B6E6D7BC250EB1EC00031832 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B6E6D7BD250EB1EC00031832 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B6E6D7C0250EB1EC00031832 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B6E6D7C2250EB1ED00031832 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6E6D7C5250EB1ED00031832 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +52,8 @@
 		B6E6D7D9250EB1ED00031832 /* OTP StarterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OTP StarterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E6D7DD250EB1ED00031832 /* OTP_StarterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OTP_StarterUITests.m; sourceTree = "<group>"; };
 		B6E6D7DF250EB1ED00031832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6E6D7F0250EBB0100031832 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		B6E6D7F1250EBB0100031832 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,12 +104,11 @@
 		B6E6D7B5250EB1EC00031832 /* OTP Starter */ = {
 			isa = PBXGroup;
 			children = (
+				B6E6D7EB250EB2FC00031832 /* auth */,
 				B6E6D7B6250EB1EC00031832 /* AppDelegate.h */,
 				B6E6D7B7250EB1EC00031832 /* AppDelegate.m */,
 				B6E6D7B9250EB1EC00031832 /* SceneDelegate.h */,
 				B6E6D7BA250EB1EC00031832 /* SceneDelegate.m */,
-				B6E6D7BC250EB1EC00031832 /* ViewController.h */,
-				B6E6D7BD250EB1EC00031832 /* ViewController.m */,
 				B6E6D7BF250EB1EC00031832 /* Main.storyboard */,
 				B6E6D7C2250EB1ED00031832 /* Assets.xcassets */,
 				B6E6D7C4250EB1ED00031832 /* LaunchScreen.storyboard */,
@@ -135,6 +134,39 @@
 				B6E6D7DF250EB1ED00031832 /* Info.plist */,
 			);
 			path = "OTP StarterUITests";
+			sourceTree = "<group>";
+		};
+		B6E6D7EB250EB2FC00031832 /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				B6E6D7EF250EB35800031832 /* register */,
+				B6E6D7EE250EB35200031832 /* login */,
+				B6E6D7EC250EB32000031832 /* welcome */,
+			);
+			path = auth;
+			sourceTree = "<group>";
+		};
+		B6E6D7EC250EB32000031832 /* welcome */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = welcome;
+			sourceTree = "<group>";
+		};
+		B6E6D7EE250EB35200031832 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				B6E6D7F0250EBB0100031832 /* LoginViewController.h */,
+				B6E6D7F1250EBB0100031832 /* LoginViewController.m */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		B6E6D7EF250EB35800031832 /* register */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = register;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,10 +299,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6E6D7BE250EB1EC00031832 /* ViewController.m in Sources */,
 				B6E6D7B8250EB1EC00031832 /* AppDelegate.m in Sources */,
 				B6E6D7C9250EB1ED00031832 /* main.m in Sources */,
 				B6E6D7BB250EB1EC00031832 /* SceneDelegate.m in Sources */,
+				B6E6D7F2250EBB0100031832 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
