@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B6E6D7B8250EB1EC00031832 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D7B7250EB1EC00031832 /* AppDelegate.m */; };
+		B6E6D7BB250EB1EC00031832 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D7BA250EB1EC00031832 /* SceneDelegate.m */; };
+		B6E6D7BE250EB1EC00031832 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D7BD250EB1EC00031832 /* ViewController.m */; };
+		B6E6D7C1250EB1EC00031832 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6E6D7BF250EB1EC00031832 /* Main.storyboard */; };
+		B6E6D7C3250EB1ED00031832 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E6D7C2250EB1ED00031832 /* Assets.xcassets */; };
+		B6E6D7C6250EB1ED00031832 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6E6D7C4250EB1ED00031832 /* LaunchScreen.storyboard */; };
+		B6E6D7C9250EB1ED00031832 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D7C8250EB1ED00031832 /* main.m */; };
+		B6E6D7D3250EB1ED00031832 /* OTP_StarterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D7D2250EB1ED00031832 /* OTP_StarterTests.m */; };
+		B6E6D7DE250EB1ED00031832 /* OTP_StarterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D7DD250EB1ED00031832 /* OTP_StarterUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B6E6D7CF250EB1ED00031832 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6E6D7AB250EB1EC00031832 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6E6D7B2250EB1EC00031832;
+			remoteInfo = "OTP Starter";
+		};
+		B6E6D7DA250EB1ED00031832 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6E6D7AB250EB1EC00031832 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6E6D7B2250EB1EC00031832;
+			remoteInfo = "OTP Starter";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B6E6D7B3250EB1EC00031832 /* OTP Starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OTP Starter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6E6D7B6250EB1EC00031832 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B6E6D7B7250EB1EC00031832 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B6E6D7B9250EB1EC00031832 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		B6E6D7BA250EB1EC00031832 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		B6E6D7BC250EB1EC00031832 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B6E6D7BD250EB1EC00031832 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B6E6D7C0250EB1EC00031832 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B6E6D7C2250EB1ED00031832 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6E6D7C5250EB1ED00031832 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B6E6D7C7250EB1ED00031832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6E6D7C8250EB1ED00031832 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6E6D7CE250EB1ED00031832 /* OTP StarterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OTP StarterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6E6D7D2250EB1ED00031832 /* OTP_StarterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OTP_StarterTests.m; sourceTree = "<group>"; };
+		B6E6D7D4250EB1ED00031832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6E6D7D9250EB1ED00031832 /* OTP StarterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OTP StarterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6E6D7DD250EB1ED00031832 /* OTP_StarterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OTP_StarterUITests.m; sourceTree = "<group>"; };
+		B6E6D7DF250EB1ED00031832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6E6D7B0250EB1EC00031832 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6E6D7CB250EB1ED00031832 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6E6D7D6250EB1ED00031832 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B6E6D7AA250EB1EC00031832 = {
+			isa = PBXGroup;
+			children = (
+				B6E6D7B5250EB1EC00031832 /* OTP Starter */,
+				B6E6D7D1250EB1ED00031832 /* OTP StarterTests */,
+				B6E6D7DC250EB1ED00031832 /* OTP StarterUITests */,
+				B6E6D7B4250EB1EC00031832 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B6E6D7B4250EB1EC00031832 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6E6D7B3250EB1EC00031832 /* OTP Starter.app */,
+				B6E6D7CE250EB1ED00031832 /* OTP StarterTests.xctest */,
+				B6E6D7D9250EB1ED00031832 /* OTP StarterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6E6D7B5250EB1EC00031832 /* OTP Starter */ = {
+			isa = PBXGroup;
+			children = (
+				B6E6D7B6250EB1EC00031832 /* AppDelegate.h */,
+				B6E6D7B7250EB1EC00031832 /* AppDelegate.m */,
+				B6E6D7B9250EB1EC00031832 /* SceneDelegate.h */,
+				B6E6D7BA250EB1EC00031832 /* SceneDelegate.m */,
+				B6E6D7BC250EB1EC00031832 /* ViewController.h */,
+				B6E6D7BD250EB1EC00031832 /* ViewController.m */,
+				B6E6D7BF250EB1EC00031832 /* Main.storyboard */,
+				B6E6D7C2250EB1ED00031832 /* Assets.xcassets */,
+				B6E6D7C4250EB1ED00031832 /* LaunchScreen.storyboard */,
+				B6E6D7C7250EB1ED00031832 /* Info.plist */,
+				B6E6D7C8250EB1ED00031832 /* main.m */,
+			);
+			path = "OTP Starter";
+			sourceTree = "<group>";
+		};
+		B6E6D7D1250EB1ED00031832 /* OTP StarterTests */ = {
+			isa = PBXGroup;
+			children = (
+				B6E6D7D2250EB1ED00031832 /* OTP_StarterTests.m */,
+				B6E6D7D4250EB1ED00031832 /* Info.plist */,
+			);
+			path = "OTP StarterTests";
+			sourceTree = "<group>";
+		};
+		B6E6D7DC250EB1ED00031832 /* OTP StarterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B6E6D7DD250EB1ED00031832 /* OTP_StarterUITests.m */,
+				B6E6D7DF250EB1ED00031832 /* Info.plist */,
+			);
+			path = "OTP StarterUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6E6D7B2250EB1EC00031832 /* OTP Starter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6E6D7E2250EB1ED00031832 /* Build configuration list for PBXNativeTarget "OTP Starter" */;
+			buildPhases = (
+				B6E6D7AF250EB1EC00031832 /* Sources */,
+				B6E6D7B0250EB1EC00031832 /* Frameworks */,
+				B6E6D7B1250EB1EC00031832 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OTP Starter";
+			productName = "OTP Starter";
+			productReference = B6E6D7B3250EB1EC00031832 /* OTP Starter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B6E6D7CD250EB1ED00031832 /* OTP StarterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6E6D7E5250EB1ED00031832 /* Build configuration list for PBXNativeTarget "OTP StarterTests" */;
+			buildPhases = (
+				B6E6D7CA250EB1ED00031832 /* Sources */,
+				B6E6D7CB250EB1ED00031832 /* Frameworks */,
+				B6E6D7CC250EB1ED00031832 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6E6D7D0250EB1ED00031832 /* PBXTargetDependency */,
+			);
+			name = "OTP StarterTests";
+			productName = "OTP StarterTests";
+			productReference = B6E6D7CE250EB1ED00031832 /* OTP StarterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B6E6D7D8250EB1ED00031832 /* OTP StarterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6E6D7E8250EB1ED00031832 /* Build configuration list for PBXNativeTarget "OTP StarterUITests" */;
+			buildPhases = (
+				B6E6D7D5250EB1ED00031832 /* Sources */,
+				B6E6D7D6250EB1ED00031832 /* Frameworks */,
+				B6E6D7D7250EB1ED00031832 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6E6D7DB250EB1ED00031832 /* PBXTargetDependency */,
+			);
+			name = "OTP StarterUITests";
+			productName = "OTP StarterUITests";
+			productReference = B6E6D7D9250EB1ED00031832 /* OTP StarterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6E6D7AB250EB1EC00031832 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = "James Gibbons";
+				TargetAttributes = {
+					B6E6D7B2250EB1EC00031832 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					B6E6D7CD250EB1ED00031832 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = B6E6D7B2250EB1EC00031832;
+					};
+					B6E6D7D8250EB1ED00031832 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = B6E6D7B2250EB1EC00031832;
+					};
+				};
+			};
+			buildConfigurationList = B6E6D7AE250EB1EC00031832 /* Build configuration list for PBXProject "OTP Starter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6E6D7AA250EB1EC00031832;
+			productRefGroup = B6E6D7B4250EB1EC00031832 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6E6D7B2250EB1EC00031832 /* OTP Starter */,
+				B6E6D7CD250EB1ED00031832 /* OTP StarterTests */,
+				B6E6D7D8250EB1ED00031832 /* OTP StarterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6E6D7B1250EB1EC00031832 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E6D7C6250EB1ED00031832 /* LaunchScreen.storyboard in Resources */,
+				B6E6D7C3250EB1ED00031832 /* Assets.xcassets in Resources */,
+				B6E6D7C1250EB1EC00031832 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6E6D7CC250EB1ED00031832 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6E6D7D7250EB1ED00031832 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6E6D7AF250EB1EC00031832 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E6D7BE250EB1EC00031832 /* ViewController.m in Sources */,
+				B6E6D7B8250EB1EC00031832 /* AppDelegate.m in Sources */,
+				B6E6D7C9250EB1ED00031832 /* main.m in Sources */,
+				B6E6D7BB250EB1EC00031832 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6E6D7CA250EB1ED00031832 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E6D7D3250EB1ED00031832 /* OTP_StarterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6E6D7D5250EB1ED00031832 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E6D7DE250EB1ED00031832 /* OTP_StarterUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B6E6D7D0250EB1ED00031832 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6E6D7B2250EB1EC00031832 /* OTP Starter */;
+			targetProxy = B6E6D7CF250EB1ED00031832 /* PBXContainerItemProxy */;
+		};
+		B6E6D7DB250EB1ED00031832 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6E6D7B2250EB1EC00031832 /* OTP Starter */;
+			targetProxy = B6E6D7DA250EB1ED00031832 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B6E6D7BF250EB1EC00031832 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6E6D7C0250EB1EC00031832 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B6E6D7C4250EB1ED00031832 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6E6D7C5250EB1ED00031832 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6E6D7E0250EB1ED00031832 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B6E6D7E1250EB1ED00031832 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6E6D7E3250EB1ED00031832 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "OTP Starter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flipweb.co.uk.OTP-Starter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B6E6D7E4250EB1ED00031832 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "OTP Starter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flipweb.co.uk.OTP-Starter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B6E6D7E6250EB1ED00031832 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "OTP StarterTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flipweb.co.uk.OTP-StarterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OTP Starter.app/OTP Starter";
+			};
+			name = Debug;
+		};
+		B6E6D7E7250EB1ED00031832 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "OTP StarterTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flipweb.co.uk.OTP-StarterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OTP Starter.app/OTP Starter";
+			};
+			name = Release;
+		};
+		B6E6D7E9250EB1ED00031832 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "OTP StarterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flipweb.co.uk.OTP-StarterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "OTP Starter";
+			};
+			name = Debug;
+		};
+		B6E6D7EA250EB1ED00031832 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "OTP StarterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flipweb.co.uk.OTP-StarterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "OTP Starter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6E6D7AE250EB1EC00031832 /* Build configuration list for PBXProject "OTP Starter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6E6D7E0250EB1ED00031832 /* Debug */,
+				B6E6D7E1250EB1ED00031832 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6E6D7E2250EB1ED00031832 /* Build configuration list for PBXNativeTarget "OTP Starter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6E6D7E3250EB1ED00031832 /* Debug */,
+				B6E6D7E4250EB1ED00031832 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6E6D7E5250EB1ED00031832 /* Build configuration list for PBXNativeTarget "OTP StarterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6E6D7E6250EB1ED00031832 /* Debug */,
+				B6E6D7E7250EB1ED00031832 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6E6D7E8250EB1ED00031832 /* Build configuration list for PBXNativeTarget "OTP StarterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6E6D7E9250EB1ED00031832 /* Debug */,
+				B6E6D7EA250EB1ED00031832 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6E6D7AB250EB1EC00031832 /* Project object */;
+}
