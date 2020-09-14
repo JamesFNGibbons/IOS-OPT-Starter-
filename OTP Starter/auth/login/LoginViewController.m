@@ -20,8 +20,13 @@
     
     self.title = @"LOGIN";
     [UINavigationBar appearance].backIndicatorImage = [UIImage systemImageNamed:@"chevron.left"];
-    
+        
+    // small UI tweaks for the input dialogs.
     self.numberInput.placeholder = @"Your Number";
+    [self.numberInput setKeyboardType: UIKeyboardTypeNumberPad];
+    
+    self.smsCodeInput.placeholder = @"6 digit SMS code";
+    [self.smsCodeInput setKeyboardType: UIKeyboardTypeNumberPad];
 }
 
 
@@ -67,11 +72,11 @@
 - (BOOL) validateSMSNumber {
     NSString *number = self.numberInput.text;
     
-    if([self isAcceptableCharString:number]) {
+    if([number length] > 0 && [self isAcceptableCharString:number]) {
         NSString *firstChar = [number substringWithRange:NSMakeRange(0, 1)];
         NSString *secondChar = [number substringWithRange:NSMakeRange(1, 1)];
         
-        if([number length] == 9 && [firstChar isEqualToString:@"0"] && [secondChar isEqualToString:@"7"]) {
+        if([number length] == 11 && [firstChar isEqualToString:@"0"] && [secondChar isEqualToString:@"7"]) {
             return true;
         }
         else {
