@@ -48,7 +48,7 @@
 }
 
 
-- (void)keyboardWillHide:(NSNotification *)notification {
+- (void)keyboardWillHide:(nullable NSNotification *)notification {
     CGRect frame = self.view.frame;
         
     // reset origin to default position value of 0
@@ -57,26 +57,98 @@
 }
 
 
-- (BOOL) validateSMSNumber {
-    NSString *number = self.numberInput.text;
-    NSLog(@([number characterAtIndex:0]));
+- (BOOL) isAcceptableCharString:(NSString *)string {
+    NSString *trimmedNonDecimalString = [string stringByTrimmingCharactersInSet:[NSCharacterSet decimalDigitCharacterSet]];
+    return ([trimmedNonDecimalString length] == 0);
     
-    if(number.length == 9 && [number characterAtIndex:0] == @"0" && [number characterAtIndex:1] == @"7") {
-        return true;
-    }
-    else {
-        return false;
-    }
 }
 
 
-- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
-    if(identifier == @"to-sms" && [self validateSMSNumber]) {
-        return true;
+- (BOOL) validateSMSNumber {
+    NSString *number = self.numberInput.text;
+    
+    if([self isAcceptableCharString:number]) {
+        NSString *firstChar = [number substringWithRange:NSMakeRange(0, 1)];
+        NSString *secondChar = [number substringWithRange:NSMakeRange(1, 1)];
+        
+        if([number length] == 9 && [firstChar isEqualToString:@"0"] && [secondChar isEqualToString:@"7"]) {
+            return true;
+        }
+        else {
+            
+            UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"My Alert"
+            message:@"This is an alert."
+            preferredStyle:UIAlertControllerStyleAlert];
+            
+            UIAlertAction *closeAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler: ^(UIAlertAction *action) {
+                   [alert dismissViewControllerAnimated:true completion:nil];
+               }];
+            [alert addAction:closeAction];
+            
+            [self presentViewController:alert animated:true completion:nil];
+            
+            return false;
+        }
     }
-    else if(identifier == @"to-sms" && ![self validateSMSNumber]) {
+    else {
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"My Alert"
+        message:@"Your number does not seem to be correct. Please check it and try again"
+        preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction *closeAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler: ^(UIAlertAction *action) {
+            
+            [alert dismissViewControllerAnimated:true completion:nil];
+        }];
+        [alert addAction:closeAction];
+        
+        [self presentViewController:alert animated:true completion:nil];
+        
         return false;
     }
+
+    
+    // default
+    return false;
+}
+
+
+- (BOOL) validateSMSCode {
+    NSString *code = self.smsCodeInput.text;
+    if(code.length == 6) {
+        
+    }
+    else {
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"My Alert"
+        message:@"This is an alert."
+        preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction *closeAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler: ^(UIAlertAction *action) {
+            [alert dismissViewControllerAnimated:true completion:nil];
+        }];
+        [alert addAction:closeAction];
+        
+        [self presentViewController:alert animated:true completion:nil];
+        
+        return false;
+    }
+    
+    // default
+    return false;
+}
+
+
+
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+    
+    // close keyboard to prevent frame oversize
+    [self.view endEditing:true];
+    
+    if([identifier isEqualToString:@"to-sms"] && [self validateSMSNumber]) {
+        return true;
+    }
+//    else if(identifier == @"to-sms" && ![self validateSMSNumber]) {
+//        return false;
+//    }
     
     // default
     return false;
