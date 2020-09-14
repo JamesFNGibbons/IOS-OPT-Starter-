@@ -22,8 +22,12 @@
     [UINavigationBar appearance].backIndicatorImage = [UIImage systemImageNamed:@"chevron.left"];
     
     self.numberInput.placeholder = @"Your Number";
+}
 
-    
+
+- (void)viewWillAppear:(BOOL)animated {
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
 }
 
 
@@ -32,7 +36,28 @@
 }
 
 
-- (bool) validateSMSNumber {
+- (void)keyboardWillShow:(NSNotification *)notification {
+    CGSize keyboardSize = [[[notification userInfo] objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
+    CGRect frame = self.view.frame;
+    
+    int contentKeyboardPadding = 0;
+    
+    // resize frame to fit keyboard within, with content padding behind keyboard
+    frame.origin.y -= (keyboardSize.height + contentKeyboardPadding);
+    self.view.frame = frame;
+}
+
+
+- (void)keyboardWillHide:(NSNotification *)notification {
+    CGRect frame = self.view.frame;
+        
+    // reset origin to default position value of 0
+    frame.origin.y = 0;
+    self.view.frame = frame;
+}
+
+
+- (BOOL) validateSMSNumber {
     NSString *number = self.numberInput.text;
     NSLog(@([number characterAtIndex:0]));
     
