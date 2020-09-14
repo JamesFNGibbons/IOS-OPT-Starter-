@@ -10,4 +10,7 @@
 
 @interface LoginViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *numberInput;
+@property (weak, nonatomic) IBOutlet UITextField *smsCodeInput;
+
 @end

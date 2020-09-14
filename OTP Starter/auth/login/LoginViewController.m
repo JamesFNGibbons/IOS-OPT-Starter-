@@ -20,7 +20,41 @@
     
     self.title = @"LOGIN";
     [UINavigationBar appearance].backIndicatorImage = [UIImage systemImageNamed:@"chevron.left"];
+    
+    self.numberInput.placeholder = @"Your Number";
 
+    
+}
+
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [[self view] endEditing:true];
+}
+
+
+- (bool) validateSMSNumber {
+    NSString *number = self.numberInput.text;
+    NSLog(@([number characterAtIndex:0]));
+    
+    if(number.length == 9 && [number characterAtIndex:0] == @"0" && [number characterAtIndex:1] == @"7") {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+    if(identifier == @"to-sms" && [self validateSMSNumber]) {
+        return true;
+    }
+    else if(identifier == @"to-sms" && ![self validateSMSNumber]) {
+        return false;
+    }
+    
+    // default
+    return false;
 }
 
 /*

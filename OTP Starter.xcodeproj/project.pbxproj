@@ -16,6 +16,7 @@
 		B6E6D7D3250EB1ED00031832 /* OTP_StarterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D7D2250EB1ED00031832 /* OTP_StarterTests.m */; };
 		B6E6D7DE250EB1ED00031832 /* OTP_StarterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D7DD250EB1ED00031832 /* OTP_StarterUITests.m */; };
 		B6E6D7F2250EBB0100031832 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D7F1250EBB0100031832 /* LoginViewController.m */; };
+		B6E6D7FA250FB03300031832 /* DefaultNavigationBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D7F9250FB03300031832 /* DefaultNavigationBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		B6E6D7DF250EB1ED00031832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6E6D7F0250EBB0100031832 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		B6E6D7F1250EBB0100031832 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		B6E6D7F8250FB03300031832 /* DefaultNavigationBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultNavigationBarController.h; sourceTree = "<group>"; };
+		B6E6D7F9250FB03300031832 /* DefaultNavigationBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefaultNavigationBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,7 @@
 		B6E6D7B5250EB1EC00031832 /* OTP Starter */ = {
 			isa = PBXGroup;
 			children = (
+				B6E6D7F7250FAFD300031832 /* UI Shared */,
 				B6E6D7EB250EB2FC00031832 /* auth */,
 				B6E6D7B6250EB1EC00031832 /* AppDelegate.h */,
 				B6E6D7B7250EB1EC00031832 /* AppDelegate.m */,
@@ -167,6 +171,15 @@
 			children = (
 			);
 			path = register;
+			sourceTree = "<group>";
+		};
+		B6E6D7F7250FAFD300031832 /* UI Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B6E6D7F8250FB03300031832 /* DefaultNavigationBarController.h */,
+				B6E6D7F9250FB03300031832 /* DefaultNavigationBarController.m */,
+			);
+			path = "UI Shared";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +314,7 @@
 			files = (
 				B6E6D7B8250EB1EC00031832 /* AppDelegate.m in Sources */,
 				B6E6D7C9250EB1ED00031832 /* main.m in Sources */,
+				B6E6D7FA250FB03300031832 /* DefaultNavigationBarController.m in Sources */,
 				B6E6D7BB250EB1EC00031832 /* SceneDelegate.m in Sources */,
 				B6E6D7F2250EBB0100031832 /* LoginViewController.m in Sources */,
 			);
