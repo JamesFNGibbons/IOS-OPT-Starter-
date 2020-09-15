@@ -17,6 +17,8 @@
 		B6E6D7DE250EB1ED00031832 /* OTP_StarterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D7DD250EB1ED00031832 /* OTP_StarterUITests.m */; };
 		B6E6D7F2250EBB0100031832 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D7F1250EBB0100031832 /* LoginViewController.m */; };
 		B6E6D7FA250FB03300031832 /* DefaultNavigationBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D7F9250FB03300031832 /* DefaultNavigationBarController.m */; };
+		B6E6D7FE2510E25700031832 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D7FD2510E25700031832 /* LaunchViewController.m */; };
+		B6E6D8012510F03500031832 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D8002510F03500031832 /* WelcomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,10 @@
 		B6E6D7F1250EBB0100031832 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		B6E6D7F8250FB03300031832 /* DefaultNavigationBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultNavigationBarController.h; sourceTree = "<group>"; };
 		B6E6D7F9250FB03300031832 /* DefaultNavigationBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefaultNavigationBarController.m; sourceTree = "<group>"; };
+		B6E6D7FC2510E25700031832 /* LaunchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
+		B6E6D7FD2510E25700031832 /* LaunchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
+		B6E6D7FF2510F03500031832 /* WelcomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		B6E6D8002510F03500031832 /* WelcomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,7 @@
 		B6E6D7B5250EB1EC00031832 /* OTP Starter */ = {
 			isa = PBXGroup;
 			children = (
+				B6E6D7FB2510E23F00031832 /* launch */,
 				B6E6D7F7250FAFD300031832 /* UI Shared */,
 				B6E6D7EB250EB2FC00031832 /* auth */,
 				B6E6D7B6250EB1EC00031832 /* AppDelegate.h */,
@@ -153,6 +160,8 @@
 		B6E6D7EC250EB32000031832 /* welcome */ = {
 			isa = PBXGroup;
 			children = (
+				B6E6D7FF2510F03500031832 /* WelcomeViewController.h */,
+				B6E6D8002510F03500031832 /* WelcomeViewController.m */,
 			);
 			path = welcome;
 			sourceTree = "<group>";
@@ -180,6 +189,15 @@
 				B6E6D7F9250FB03300031832 /* DefaultNavigationBarController.m */,
 			);
 			path = "UI Shared";
+			sourceTree = "<group>";
+		};
+		B6E6D7FB2510E23F00031832 /* launch */ = {
+			isa = PBXGroup;
+			children = (
+				B6E6D7FC2510E25700031832 /* LaunchViewController.h */,
+				B6E6D7FD2510E25700031832 /* LaunchViewController.m */,
+			);
+			path = launch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,6 +335,8 @@
 				B6E6D7FA250FB03300031832 /* DefaultNavigationBarController.m in Sources */,
 				B6E6D7BB250EB1EC00031832 /* SceneDelegate.m in Sources */,
 				B6E6D7F2250EBB0100031832 /* LoginViewController.m in Sources */,
+				B6E6D8012510F03500031832 /* WelcomeViewController.m in Sources */,
+				B6E6D7FE2510E25700031832 /* LaunchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
