@@ -25,10 +25,24 @@
     // animate and await result
     [self animateLaunch :^(bool animationCompleted) {
         [self animateViewOut:^(bool completed) {
-            UIViewController *welcomeViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"preAuthNavController"];
-                  [self presentViewController:welcomeViewController animated:false completion:nil];
+            [self navigateNextView];
         }];
     }];
+}
+
+
+- (void) navigateNextView {
+    if([[NSUserDefaults standardUserDefaults] stringForKey:@"auth-token"]) {
+        
+        // TODO - take user to home
+        
+    }
+    else {
+     
+        // no auth token, navigate to welcome view.
+        UIViewController *welcomeViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"preAuthNavController"];
+        [self presentViewController:welcomeViewController animated:false completion:nil];
+    }
 }
 
 

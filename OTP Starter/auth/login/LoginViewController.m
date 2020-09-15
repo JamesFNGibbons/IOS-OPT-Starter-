@@ -86,8 +86,8 @@
             preferredStyle:UIAlertControllerStyleAlert];
             
             UIAlertAction *closeAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler: ^(UIAlertAction *action) {
-                   [alert dismissViewControllerAnimated:true completion:nil];
-               }];
+                [alert dismissViewControllerAnimated:true completion:nil];
+            }];
             [alert addAction:closeAction];
             
             [self presentViewController:alert animated:true completion:nil];
@@ -101,7 +101,6 @@
         preferredStyle:UIAlertControllerStyleAlert];
         
         UIAlertAction *closeAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler: ^(UIAlertAction *action) {
-            
             [alert dismissViewControllerAnimated:true completion:nil];
         }];
         [alert addAction:closeAction];
