@@ -19,6 +19,8 @@
 		B6E6D7FA250FB03300031832 /* DefaultNavigationBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D7F9250FB03300031832 /* DefaultNavigationBarController.m */; };
 		B6E6D7FE2510E25700031832 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D7FD2510E25700031832 /* LaunchViewController.m */; };
 		B6E6D8012510F03500031832 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D8002510F03500031832 /* WelcomeViewController.m */; };
+		B6E6D80525117DD200031832 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D80425117DD200031832 /* HomeViewController.m */; };
+		B6E6D80825117E2C00031832 /* HomeTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D80725117E2C00031832 /* HomeTabViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,10 @@
 		B6E6D7FD2510E25700031832 /* LaunchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
 		B6E6D7FF2510F03500031832 /* WelcomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
 		B6E6D8002510F03500031832 /* WelcomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		B6E6D80325117DD200031832 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		B6E6D80425117DD200031832 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		B6E6D80625117E2C00031832 /* HomeTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeTabViewController.h; sourceTree = "<group>"; };
+		B6E6D80725117E2C00031832 /* HomeTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeTabViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,7 @@
 		B6E6D7B5250EB1EC00031832 /* OTP Starter */ = {
 			isa = PBXGroup;
 			children = (
+				B6E6D80225117DBF00031832 /* home */,
 				B6E6D7FB2510E23F00031832 /* launch */,
 				B6E6D7F7250FAFD300031832 /* UI Shared */,
 				B6E6D7EB250EB2FC00031832 /* auth */,
@@ -198,6 +205,17 @@
 				B6E6D7FD2510E25700031832 /* LaunchViewController.m */,
 			);
 			path = launch;
+			sourceTree = "<group>";
+		};
+		B6E6D80225117DBF00031832 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				B6E6D80325117DD200031832 /* HomeViewController.h */,
+				B6E6D80425117DD200031832 /* HomeViewController.m */,
+				B6E6D80625117E2C00031832 /* HomeTabViewController.h */,
+				B6E6D80725117E2C00031832 /* HomeTabViewController.m */,
+			);
+			path = home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,6 +355,8 @@
 				B6E6D7F2250EBB0100031832 /* LoginViewController.m in Sources */,
 				B6E6D8012510F03500031832 /* WelcomeViewController.m in Sources */,
 				B6E6D7FE2510E25700031832 /* LaunchViewController.m in Sources */,
+				B6E6D80525117DD200031832 /* HomeViewController.m in Sources */,
+				B6E6D80825117E2C00031832 /* HomeTabViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

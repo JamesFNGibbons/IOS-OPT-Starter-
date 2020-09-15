@@ -111,6 +111,9 @@
                                 <state key="normal" title="VERIFY">
                                     <color key="titleColor" name="Button Text Color"/>
                                 </state>
+                                <connections>
+                                    <action selector="verifySmsValidationCodeClickEvent:" destination="ay2-3K-XuP" eventType="touchUpInside" id="0Jw-7o-u7S"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -278,6 +281,74 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l8g-Wc-ZNl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1143" y="-621"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="HMR-sg-XHH">
+            <objects>
+                <viewController id="ys3-1K-Qty" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ps8-uJ-k1p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="bsk-sa-MhT"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="LWd-ix-LtY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gqu-1i-NT1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="238" y="885"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="q4G-Ht-wwv">
+            <objects>
+                <viewController title="Home" id="gqG-9p-Xhw" customClass="HomeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fpz-dX-oze">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yiou are logged in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHN-Gl-yLv">
+                                <rect key="frame" x="43" y="84" width="138" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vB7-v4-uf6">
+                                <rect key="frame" x="43" y="113" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign out"/>
+                                <connections>
+                                    <action selector="signOutButtonTapEvent:" destination="gqG-9p-Xhw" eventType="touchUpInside" id="8L1-Gq-Y5S"/>
+                                    <action selector="signoutTapEvent:" destination="gqG-9p-Xhw" eventType="touchUpInside" id="l1o-mQ-Rx2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="dTo-F5-H0d"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="gIk-gC-H87"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VIz-9r-aJ9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="237.59999999999999" y="182.51231527093597"/>
+        </scene>
+        <!--Home Tab View Controller-->
+        <scene sceneID="qFR-tW-7Uy">
+            <objects>
+                <tabBarController storyboardIdentifier="home" id="n6z-bQ-2tA" customClass="HomeTabViewController" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gK1-Tg-kNp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="gqG-9p-Xhw" kind="relationship" relationship="viewControllers" id="ZO9-rz-EU5"/>
+                        <segue destination="ys3-1K-Qty" kind="relationship" relationship="viewControllers" id="1MB-fp-2Ne"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hr9-kT-0q5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1143" y="452"/>
         </scene>
     </scenes>
     <resources>

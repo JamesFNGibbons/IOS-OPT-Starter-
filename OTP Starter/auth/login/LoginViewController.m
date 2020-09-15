@@ -120,6 +120,9 @@
     NSString *code = self.smsCodeInput.text;
     if(code.length == 6) {
         
+        // TODO add codeblock to confirm the sms validation code
+        return true;
+        
     }
     else {
         UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"My Alert"
@@ -141,7 +144,6 @@
 }
 
 
-
 - (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
     
     // close keyboard to prevent frame oversize
@@ -150,13 +152,27 @@
     if([identifier isEqualToString:@"to-sms"] && [self validateSMSNumber]) {
         return true;
     }
-//    else if(identifier == @"to-sms" && ![self validateSMSNumber]) {
-//        return false;
-//    }
     
     // default
     return false;
 }
+
+
+- (IBAction)verifySmsValidationCodeClickEvent:(id)sender {
+    if([self validateSMSCode]) {
+        UIViewController *homeView = [self.storyboard instantiateViewControllerWithIdentifier:@"home"];
+        
+        // TODO connect to backend and generate new auth token.
+        NSString *authToken = @"123456";
+        [[NSUserDefaults standardUserDefaults] setObject:authToken forKey:@"auth-token"];
+        
+        // switch the views
+        [self.view.window addSubview:homeView.view];
+        [self.navigationController.view removeFromSuperview];
+        
+    }
+}
+
 
 /*
 #pragma mark - Navigation

@@ -33,8 +33,9 @@
 
 - (void) navigateNextView {
     if([[NSUserDefaults standardUserDefaults] stringForKey:@"auth-token"]) {
-        
-        // TODO - take user to home
+        // auth token already saved, take the user back to the home view
+        UIViewController *homeViewController = [[self storyboard] instantiateViewControllerWithIdentifier:@"home"];
+        [self.view.window addSubview:homeViewController.view];
         
     }
     else {
