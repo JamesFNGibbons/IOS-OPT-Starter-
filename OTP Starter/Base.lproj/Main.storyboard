@@ -56,6 +56,9 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="00j-eV-0lV" kind="show" id="tbb-o3-RVR"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -193,6 +196,7 @@
         <!--LOGIN-->
         <scene sceneID="CT6-9S-zCX">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lPq-JB-WJh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController title="LOGIN" id="7PI-9a-3sr" customClass="LoginViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t4K-Fz-4Zb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -247,7 +251,6 @@
                         <outlet property="numberInput" destination="jfS-3c-Vjz" id="is5-4i-0dS"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lPq-JB-WJh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1778.4000000000001" y="-622.90640394088678"/>
         </scene>
@@ -296,7 +299,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gqu-1i-NT1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="238" y="885"/>
+            <point key="canvasLocation" x="238" y="1317"/>
         </scene>
         <!--Home-->
         <scene sceneID="q4G-Ht-wwv">
@@ -330,7 +333,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VIz-9r-aJ9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="237.59999999999999" y="182.51231527093597"/>
+            <point key="canvasLocation" x="238" y="615"/>
         </scene>
         <!--Home Tab View Controller-->
         <scene sceneID="qFR-tW-7Uy">
@@ -348,7 +351,127 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hr9-kT-0q5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1143" y="452"/>
+            <point key="canvasLocation" x="-1143" y="884"/>
+        </scene>
+        <!--SIGN UP-->
+        <scene sceneID="Ukh-d5-JDx">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L6V-pi-MMu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController title="SIGN UP" id="00j-eV-0lV" customClass="LoginViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Jc-Bc-fpb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your mobile number  to continue" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKR-W5-Ubk">
+                                <rect key="frame" x="12" y="88" width="351" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="sQI-CV-GZY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ygh-h9-emr">
+                                <rect key="frame" x="16" y="663" width="343" height="34"/>
+                                <accessibility key="accessibilityConfiguration" hint="Number" label="Number"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="wz0-1e-MGT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9yp-cU-zcq">
+                                <rect key="frame" x="16" y="705" width="343" height="42"/>
+                                <color key="backgroundColor" name="Button Colour"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" name="Button Text Color"/>
+                                </state>
+                                <connections>
+                                    <segue destination="clM-xU-D6d" kind="show" id="ibf-tY-qPM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9yp-cU-zcq" firstAttribute="top" secondItem="ygh-h9-emr" secondAttribute="bottom" constant="8" id="06t-s2-G8B"/>
+                            <constraint firstItem="WKR-W5-Ubk" firstAttribute="top" secondItem="3JS-cG-dkk" secondAttribute="top" constant="44" id="11b-cT-Ayh"/>
+                            <constraint firstItem="9yp-cU-zcq" firstAttribute="leading" secondItem="ygh-h9-emr" secondAttribute="leading" id="2nC-qP-3em"/>
+                            <constraint firstItem="9yp-cU-zcq" firstAttribute="centerX" secondItem="WKR-W5-Ubk" secondAttribute="centerX" id="9EC-2B-bFX"/>
+                            <constraint firstItem="WKR-W5-Ubk" firstAttribute="centerX" secondItem="4Jc-Bc-fpb" secondAttribute="centerX" id="AkU-W4-uQZ"/>
+                            <constraint firstItem="WKR-W5-Ubk" firstAttribute="leading" secondItem="3JS-cG-dkk" secondAttribute="leading" constant="12" id="OL3-kl-kYI"/>
+                            <constraint firstItem="ygh-h9-emr" firstAttribute="leading" secondItem="4Jc-Bc-fpb" secondAttribute="leadingMargin" id="UYt-UT-EhC"/>
+                            <constraint firstItem="3JS-cG-dkk" firstAttribute="bottom" secondItem="9yp-cU-zcq" secondAttribute="bottom" constant="31" id="Xzj-jk-aBX"/>
+                            <constraint firstItem="9yp-cU-zcq" firstAttribute="trailing" secondItem="ygh-h9-emr" secondAttribute="trailing" id="rGH-mD-sml"/>
+                            <constraint firstAttribute="bottom" secondItem="ygh-h9-emr" secondAttribute="bottom" constant="115" id="vLL-fI-S0h"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3JS-cG-dkk"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="imu-ZK-WH5"/>
+                    <connections>
+                        <outlet property="numberInput" destination="ygh-h9-emr" id="Rfy-dU-iGE"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1778" y="123"/>
+        </scene>
+        <!--LOGIN-->
+        <scene sceneID="6Fo-NW-h3T">
+            <objects>
+                <viewController title="LOGIN" id="clM-xU-D6d" customClass="LoginViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1z2-fb-CeM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Please enter your 6 digit code that has been  sent to your number." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5E-dJ-lNF">
+                                <rect key="frame" x="16" y="105" width="351" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="ni3-bO-UsS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KNX-Po-U3Y">
+                                <rect key="frame" x="16" y="660" width="343" height="34"/>
+                                <accessibility key="accessibilityConfiguration" hint="Number" label="Number"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCh-f2-6DU">
+                                <rect key="frame" x="16" y="703" width="343" height="42"/>
+                                <color key="backgroundColor" name="Button Colour"/>
+                                <state key="normal" title="VERIFY">
+                                    <color key="titleColor" name="Button Text Color"/>
+                                </state>
+                                <connections>
+                                    <action selector="verifySmsValidationCodeClickEvent:" destination="clM-xU-D6d" eventType="touchUpInside" id="sxs-rn-4tL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Mkw-oL-ZV2" firstAttribute="bottom" secondItem="GCh-f2-6DU" secondAttribute="bottom" constant="33" id="BVR-gE-IJl"/>
+                            <constraint firstItem="KNX-Po-U3Y" firstAttribute="trailing" secondItem="1z2-fb-CeM" secondAttribute="trailingMargin" id="E5j-XT-nmb"/>
+                            <constraint firstItem="Mkw-oL-ZV2" firstAttribute="trailing" secondItem="S5E-dJ-lNF" secondAttribute="trailing" constant="8" id="boC-9F-u85"/>
+                            <constraint firstItem="S5E-dJ-lNF" firstAttribute="top" secondItem="Mkw-oL-ZV2" secondAttribute="top" constant="44" id="cBh-ki-m7I"/>
+                            <constraint firstAttribute="bottom" secondItem="KNX-Po-U3Y" secondAttribute="bottom" constant="118" id="dff-Yq-UYy"/>
+                            <constraint firstItem="GCh-f2-6DU" firstAttribute="trailing" secondItem="KNX-Po-U3Y" secondAttribute="trailing" id="dja-fq-uLw"/>
+                            <constraint firstItem="GCh-f2-6DU" firstAttribute="top" secondItem="KNX-Po-U3Y" secondAttribute="bottom" constant="9" id="hxo-U0-dj9"/>
+                            <constraint firstItem="S5E-dJ-lNF" firstAttribute="top" secondItem="Mkw-oL-ZV2" secondAttribute="top" constant="61" id="jC8-g1-SfE"/>
+                            <constraint firstItem="GCh-f2-6DU" firstAttribute="leading" secondItem="KNX-Po-U3Y" secondAttribute="leading" id="tl0-uM-Bfi"/>
+                            <constraint firstItem="S5E-dJ-lNF" firstAttribute="leading" secondItem="KNX-Po-U3Y" secondAttribute="leading" id="uAN-tO-eoi"/>
+                            <constraint firstItem="S5E-dJ-lNF" firstAttribute="leading" secondItem="1z2-fb-CeM" secondAttribute="leadingMargin" id="ypE-iI-MKE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Mkw-oL-ZV2"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="J1J-LG-03z"/>
+                    <connections>
+                        <outlet property="smsCodeInput" destination="KNX-Po-U3Y" id="Fhu-d9-qvN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xfr-Xd-rHM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2542" y="123"/>
         </scene>
     </scenes>
     <resources>
